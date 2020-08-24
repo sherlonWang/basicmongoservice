@@ -157,16 +157,16 @@ git clone https://github.com/sherlonWang/basicmongoservice.git
     ```json
   [
      {
-      field:'A1',
-      operation:'>', 
-      value:3,
-      connection:'and'
+      "field":"A1",
+      "operation":">", 
+      "value":3,
+      "connection":"and"
     },
-     {
-      field:'A2',
-      operation:'<', 
-      value:0,
-      connection:'and'
+    {
+      "field":"A2",
+      "operation":"<", 
+      "value":0,
+      "connection":"and"
     }
   ]
     ```
