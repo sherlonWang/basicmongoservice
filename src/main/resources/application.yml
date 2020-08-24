@@ -1,0 +1,35 @@
+# 端口、路径、tomcat等相关配置
+server:
+  port: 8989
+  servlet:
+    context-path: /api
+mongodriver:
+  uri: mongodb://127.0.0.1:27017
+  # 默认数据库
+  database: test
+# mongodb配置
+#spring:
+#  data:
+#    mongodb:
+#      # 单机节点认证
+#      #      uri: mongodb://bob:123456@127.0.0.1:27017/articledb
+#      # 副本集认证
+#      #      uri: mongodb://bob:123456@127.0.0.1:27017,127.0.0.1:27018,127.0.0.1:27019/articledb?connect=replicaSet&slaveOk=true&replicaSet=myrs
+#      # 副本集
+#      #      uri: mongodb://127.0.0.1:27017,127.0.0.1:27018,127.0.0.1:27019/articledb?connect=replicaSet&slaveOk=true&replicaSet=myrs
+#      # 分片+副本集（配置路由服务）
+#      #      uri: mongodb://configrs:123456@127.0.0.1:27017,127.0.0.1:27117/articledb
+#      #      uri: mongodb://configrs:123456@192.168.3.16:27017,192.168.3.17:27017,192.168.3.19:27017/orient
+##      host: 127.0.0.1
+##      port: 27017
+##      database: test
+#      #      username: bob
+#      #      password: 123456
+#      uri: mongodb://127.0.0.1:27017/test
+#定义项目包下的日志级别
+logging:
+  pattern:
+    console: '%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(---){faint} %clr(%-80.80logger{79}){cyan} %clr(:){faint} %m%n'
+  level:
+    com:
+      orient: info
